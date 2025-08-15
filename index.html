@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Davi Marques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particulas"></div>
+
+    <nav class="Navegação">
+
+        <button class="menu-hamburguer" aria-label="Abrir menu">
+        <span class="hamburguer-linha"></span>
+        <span class="hamburguer-linha"></span>
+        <span class="hamburguer-linha"></span>
+    </button>
+
+        <ul class="Menu">
+        <li> 
+            <a href="#inicio" class="menu-link">Início</a>
+        </li>
+         <li> 
+            <a href="#sobre" class="menu-link">Sobre</a>
+        </li>
+         <li> 
+            <a href="#tecnologias" class="menu-link">Habilidades</a>
+        </li>
+        <li>
+            <a href="#meus-projetos" class="menu-link">Meus Projetos</a>
+        </li>
+         <li> 
+            <a href="#contatos" class="menu-link">Contato</a>
+        </li>
+    </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/Foto perfil.jpg" alt="Foto de Davi" class="foto-perfil">
+        <h1>Davi Marques</h1>
+        <p class="cabecalho-subtitulo">WEB DEVELOPMENT</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Olá! Sou um desenvolvedor front-end apaixonado por aprender e criar novas experiências no mundo da tecnologia. Mesmo tendo iniciado na programação em 2025 por meio do curso de analise e desenvolvimento de sistemas na faculdade Descomplica, tento sempre evoluir não só meus códigos mas também meus designers para serem o mais moderno possivel para que os sites não só funcionem perfeitamente, mas que sejam bonitos visualmente.</p>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="tecnologias">
+        <h2 class="tecnologia-titulo">Minhas habilidades</h2>
+        <div class="tecnologias-caixa">
+            <div class="tecnologias-card">
+                <img src="img/bootstrap-original.svg" alt="Habilidade 1" class="tecnologias-imagem">
+            </div>
+
+            <div class="tecnologias-card">
+                <img src="img/css3-original.svg" alt="Habilidade 2" class="tecnologias-imagem">
+            </div>
+
+            <div class="tecnologias-card">
+                <img src="img/javascript-original.svg" alt="Habilidade 3" class="tecnologias-imagem" > 
+            </div>
+
+            <div class="tecnologias-card">
+                <img src="img/html5-original.svg" alt="Habilidade 4" class="tecnologias-imagem">
+            </div>
+
+            <div class="tecnologias-card">
+                <img src="img/tailwindcss-original.svg" alt="Habilidade 5" class="tecnologias-imagem">
+            </div>
+        </div>
+    </section>
+
+    <section id="meus-projetos" class="meus-projetos">
+        <h2 class="meus-projetos-titulo">Meus Projetos</h2>
+        <div class="meus-projetos-caixa">
+
+        <div class="meus-projetos-card">
+            <a href="https://institutoneuropsi.vercel.app/" target="_blank">
+             <img src="img/institutoneuropsi.png" alt="Midias 1" class="meus-projetos-imagem">
+            </a>
+            <div class="caixa-texto-projetos">
+            <h3 class="info-projetos">InstitutoNeuroPsi</h3>
+            <p class="paragrafo-projetos">Site de dilvugação de um projeto sobre apoio emocional da mulher</p>
+            </div>
+        </div>
+
+         <div class="meus-projetos-card">
+            <a href="https://davimarques08.github.io/Lista-De-Tarefas/" target="_blank">
+             <img src="img/Lista de tarefas.png" alt="Midias 2" class="meus-projetos-imagem">
+            </a>
+            <div class="caixa-texto-projetos">
+            <h3 class="info-projetos">Lista de tarefas</h3>
+            <p class="paragrafo-projetos">Site simples que auxilia na criação de uma lista de tarefas</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulos">Entre em contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="text-form" id="nome">
+            </div> 
+            <div class="grupo-form">
+                <textarea placeholder="Digite sua mensagem" class="text-form" id="mensagem" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar via WhatsApp</button>
+        </form>
+    </section>
+
+     <footer>
+
+            <div class="footer-container">
+                  <a href="https://www.instagram.com/davimarques1908/" target="_blank">
+                    <img src="img/Instagram_logo_2022.svg.png" class="instagram" alt="Instagram" width="27">
+                  </a>
+                  <a href="https://github.com/DaviMarques08" target="_blank">
+                    <img src="img/github.svg" class="github" alt="github" width="27"> 
+                  </a>
+                  <a href="https://www.linkedin.com/in/davifbmarques" target="_blank">
+                    <img src="img/linkedin-original.svg" class="linkedin" alt="linkedin" width="27">
+                  </a>
+              </div>
+
+            </div>
+              <div class="footer-contato">
+                <img src="img/Gmail_icon_(2020).svg.png" alt="Email" width="23">
+                <p>davimarques0805@gmail.com</p>
+                <img src="img/telefone.svg" alt="Telefone" width="25">
+                <p>(091)993007042</p>
+              </div>
+
+        <p class="footer-copy">&copy;2025 Davi Marques - Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
