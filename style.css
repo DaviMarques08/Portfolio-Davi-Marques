@@ -24,7 +24,7 @@ body {
 }
 
 .Navegação {
-    position: static;
+    position: fixed;
     top: 0;
     background: rgba(15, 23, 42, 0.8);
     width: 100%;
@@ -382,7 +382,7 @@ footer {
 
 @media (max-width: 600px) {
     .tecnologias-caixa {
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas pequenas */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 0.5rem;
         max-width: 400px;
     }
@@ -394,7 +394,7 @@ footer {
 
 @media (max-width: 768px) {
     .meus-projetos-caixa {
-        grid-template-columns: 1fr; /* Cada projeto ocupa uma linha */
+        grid-template-columns: 1fr; 
     }
     .meus-projetos-card {
         margin: 0 auto;
@@ -483,4 +483,5 @@ footer {
         display: flex;
         animation: slideIn 0.5s forwards;
     }
+
 }
